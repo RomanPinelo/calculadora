@@ -1,3 +1,28 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+/* font-family: 'Press Start 2P', cursive;
+font-family: 'VT323', monospace; */
+
+@font-face{
+  font-family: "Pocket calculator";
+  src:url("./fuentes/pocket_calcuatlor_ot.otf") format("opentype"),
+  url("./fuentes/pocket_calcuatlor_tt.ttf") format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'calculator';
+  src: url('./fuentes/Calculator.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'calculator1';
+  src: url('./fuentes/Calculator1.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
 *{
   margin: 0;
   padding: 0;
