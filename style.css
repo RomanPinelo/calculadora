@@ -92,6 +92,10 @@ body {
   background-color: #444;
 }
 
+.calculadora .botones .operador .indice {
+  font-size: 1.25rem;
+}
+
 .calculadora .botones .borrar {
   background-color: #f00;
 }

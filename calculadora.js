@@ -22,7 +22,12 @@ var btn_porciento = document.getElementById("porciento");
 var btn_igual = document.getElementById("igual");
 var btn_borrar = document.getElementById("borrar");
 
-// eventos de los botones
+// Variables para hacer las operaciones
+var operacion;
+var valorDisplay1 = 0;
+var valorDisplay2 = 0;
+
+// Eventos de los botones
 btn_cero.addEventListener('click', function(){
   let valorDisplay = display.innerText;
   valorDisplay += "0";
@@ -93,6 +98,79 @@ btn_punto.addEventListener('click', function(){
   display.innerHTML = valorDisplay;
 });
 
-// .addEventListener('click', function(){
-  
-// });
+btn_suma.addEventListener('click', function(){
+  valorDisplay1 = display.innerText;
+  operacion = "suma";
+  display.innerHTML = "";
+});
+
+btn_resta.addEventListener('click', function(){
+  valorDisplay1 = display.innerText;
+  operacion = "resta";
+  display.innerHTML = "";
+});
+
+btn_multi.addEventListener('click', function(){
+  valorDisplay1 = display.innerText;
+  operacion = "multiplicacion";
+  display.innerHTML = "";
+});
+
+btn_division.addEventListener('click', function(){
+  valorDisplay1 = display.innerText;
+  operacion = "division";
+  display.innerHTML = "";
+});
+
+btn_potencia.addEventListener('click', function(){
+  valorDisplay1 = display.innerText;
+  operacion = "potencia";
+  display.innerHTML = "";
+});
+
+btn_raiz.addEventListener('click', function(){
+  valorDisplay1 = display.innerText;
+  operacion = "raiz";
+  display.innerHTML = "";
+});
+
+btn_porciento.addEventListener("click", function(){
+  valorDisplay2 = display.innerText;
+  // Convierto a entero o flotante si tiene o no punto
+  valorDisplay1.includes('.') ? valorDisplay1 = parseFloat(valorDisplay1) : valorDisplay1 = parseInt(valorDisplay1);
+  valorDisplay2.includes('.') ? valorDisplay2 = parseFloat(valorDisplay2) : valorDisplay2 = parseInt(valorDisplay2);
+
+  display.innerHTML = valorDisplay1 * (valorDisplay2 / 100);
+});
+
+btn_igual.addEventListener("click", function(){
+  valorDisplay2 = display.innerText;
+  // Convierto a entero o flotante si tiene o no punto
+  valorDisplay1.includes('.') ? valorDisplay1 = parseFloat(valorDisplay1) : valorDisplay1 = parseInt(valorDisplay1);
+  valorDisplay2.includes('.') ? valorDisplay2 = parseFloat(valorDisplay2) : valorDisplay2 = parseInt(valorDisplay2);
+
+  if (operacion == 'suma') {
+    display.innerHTML = '';
+    display.innerHTML = valorDisplay1 + valorDisplay2;
+  }
+  if (operacion == 'resta') {
+    display.innerHTML = '';
+    display.innerHTML = valorDisplay1 - valorDisplay2;
+  }
+  if (operacion == 'multiplicacion') {
+    display.innerHTML = '';
+    display.innerHTML = valorDisplay1 * valorDisplay2;
+  }
+  if (operacion == 'division') {
+    display.innerHTML = '';
+    display.innerHTML = valorDisplay1 / valorDisplay2;
+  }
+  if (operacion == 'potencia') {
+    display.innerHTML = '';
+    display.innerHTML = Math.pow(valorDisplay1, valorDisplay2);
+  }
+  if (operacion == 'raiz') {
+    display.innerHTML = '';
+    display.innerHTML = Math.pow(valorDisplay1, 1/valorDisplay2);
+  }
+});
