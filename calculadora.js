@@ -24,8 +24,8 @@ var btn_borrar = document.getElementById("borrar");
 
 // Variables para hacer las operaciones
 var operacion;
-var valorDisplay1 = 0;
-var valorDisplay2 = 0;
+var valorDisplay1;
+var valorDisplay2;
 
 // Eventos de los botones
 btn_cero.addEventListener('click', function(){
@@ -174,3 +174,28 @@ btn_igual.addEventListener("click", function(){
     display.innerHTML = Math.pow(valorDisplay1, 1/valorDisplay2);
   }
 });
+
+// Hace cambiar el color de fondo y recorre todos los valores rgb posibles
+var r = 0;
+var g = 0;
+var b = 0;
+
+function colorFondo() {
+  setInterval(() => {
+    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    b++;
+    if (b > 255) {
+      b = 0;
+      g++;
+      if (g > 255) {
+        g = 0;
+        r++;
+        if (r > 255) {
+          r = 0;
+        }
+      }
+    }
+  }, 1);
+}
+
+colorFondo();
