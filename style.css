@@ -85,12 +85,15 @@ body {
 
 .calculadora .botones .igual {
   background-color: #e3ba39;
-  width: 37.08%;
   color: #000;
 }
 
 .calculadora .botones .operador {
   background-color: #444;
+}
+
+.calculadora .botones .borrar {
+  background-color: #f00;
 }
 
 /*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*

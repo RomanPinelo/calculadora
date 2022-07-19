@@ -20,46 +20,77 @@ var btn_raiz = document.getElementById("raiz");
 var btn_punto = document.getElementById("punto");
 var btn_porciento = document.getElementById("porciento");
 var btn_igual = document.getElementById("igual");
+var btn_borrar = document.getElementById("borrar");
 
 // eventos de los botones
 btn_cero.addEventListener('click', function(){
-  
+  let valorDisplay = display.innerText;
+  valorDisplay += "0";
+  display.innerHTML = valorDisplay;
 });
 
 btn_uno.addEventListener('click', function(){
-  
+  let valorDisplay = display.innerText;
+  valorDisplay += "1";
+  display.innerHTML = valorDisplay;
 });
 
 btn_dos.addEventListener('click', function(){
-  
+  let valorDisplay = display.innerText;
+  valorDisplay += "2";
+  display.innerHTML = valorDisplay;
 });
 
 btn_tres.addEventListener('click', function(){
-  
+  let valorDisplay = display.innerText;
+  valorDisplay += "3";
+  display.innerHTML = valorDisplay;
 });
 
 btn_cuatro.addEventListener('click', function(){
-  
+  let valorDisplay = display.innerText;
+  valorDisplay += "4";
+  display.innerHTML = valorDisplay;
 });
 
 btn_cinco.addEventListener('click', function(){
-  
+  let valorDisplay = display.innerText;
+  valorDisplay += "5";
+  display.innerHTML = valorDisplay;
 });
 
 btn_seis.addEventListener('click', function(){
-  
+  let valorDisplay = display.innerText;
+  valorDisplay += "6";
+  display.innerHTML = valorDisplay;
 });
 
 btn_siete.addEventListener('click', function(){
-  
+  let valorDisplay = display.innerText;
+  valorDisplay += "7";
+  display.innerHTML = valorDisplay;
 });
 
 btn_ocho.addEventListener('click', function(){
-  
+  let valorDisplay = display.innerText;
+  valorDisplay += "8";
+  display.innerHTML = valorDisplay;
 });
 
 btn_nueve.addEventListener('click', function(){
-  
+  let valorDisplay = display.innerText;
+  valorDisplay += "9";
+  display.innerHTML = valorDisplay;
+});
+
+btn_borrar.addEventListener('click', function(){
+  display.innerHTML = "";
+});
+
+btn_punto.addEventListener('click', function(){
+  let valorDisplay = display.innerText;
+  valorDisplay += ".";
+  display.innerHTML = valorDisplay;
 });
 
 // .addEventListener('click', function(){
