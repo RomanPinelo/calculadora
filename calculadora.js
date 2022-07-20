@@ -150,28 +150,46 @@ btn_igual.addEventListener("click", function(){
   valorDisplay2.includes('.') ? valorDisplay2 = parseFloat(valorDisplay2) : valorDisplay2 = parseInt(valorDisplay2);
 
   if (operacion == 'suma') {
-    display.innerHTML = '';
-    display.innerHTML = valorDisplay1 + valorDisplay2;
+    if (isNaN(valorDisplay1 + valorDisplay2)) {
+      display.innerHTML = 'Error';
+    } else {
+      display.innerHTML = valorDisplay1 + valorDisplay2;
+    }
   }
   if (operacion == 'resta') {
-    display.innerHTML = '';
-    display.innerHTML = valorDisplay1 - valorDisplay2;
+    if (isNaN(valorDisplay1 - valorDisplay2)) {
+      display.innerHTML = 'Error';
+    } else {
+      display.innerHTML = valorDisplay1 - valorDisplay2;
+    }
   }
   if (operacion == 'multiplicacion') {
-    display.innerHTML = '';
-    display.innerHTML = valorDisplay1 * valorDisplay2;
+    if (isNaN(valorDisplay1 * valorDisplay2)) {
+      display.innerHTML = 'Error';
+    } else {
+      display.innerHTML = valorDisplay1 * valorDisplay2;
+    }
   }
   if (operacion == 'division') {
-    display.innerHTML = '';
-    display.innerHTML = valorDisplay1 / valorDisplay2;
+    if (isNaN(valorDisplay1 / valorDisplay2)) {
+      display.innerHTML = 'Error';
+    } else {
+      display.innerHTML = valorDisplay1 / valorDisplay2;
+    }
   }
   if (operacion == 'potencia') {
-    display.innerHTML = '';
-    display.innerHTML = Math.pow(valorDisplay1, valorDisplay2);
+    if (isNaN(Math.pow(valorDisplay1, valorDisplay2))) {
+      display.innerHTML = 'Error';
+    } else {
+      display.innerHTML = Math.pow(valorDisplay1, valorDisplay2);
+    }
   }
   if (operacion == 'raiz') {
-    display.innerHTML = '';
-    display.innerHTML = Math.pow(valorDisplay1, 1/valorDisplay2);
+    if (isNaN(Math.pow(valorDisplay1, 1/valorDisplay2))) {
+      display.innerHTML = 'Error';
+    } else {
+      display.innerHTML = Math.pow(valorDisplay1, 1/valorDisplay2);
+    }
   }
 });
 
