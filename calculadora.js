@@ -216,4 +216,4 @@ function colorFondo() {
   }, 1);
 }
 
-colorFondo();
+// colorFondo();
