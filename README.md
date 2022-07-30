@@ -30,4 +30,4 @@ Consiste en una calculadora sencilla, es decir que hace las operaciones básicas
 
 En el siguiente link puedes ver la página funcionando: 
 
-https://romanpinelo.github.io/puntosCircunferencia/
+https://romanpinelo.github.io/calculadora/
